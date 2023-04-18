@@ -8,7 +8,7 @@ public class KolhozAppl {
 
 	private static final int N_TRUCKS = 1000;
 	private static final int LOAD = 1;
-	private static final int N_RUNS = 1000;
+	private static final int N_RUNS = 100000;
 
 	public static void main(String[] args) {
 		Truck trucks[] = new Truck[N_TRUCKS];
