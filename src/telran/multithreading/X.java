@@ -25,6 +25,10 @@ private void m3() {
 }
 @Override
 public void run() {
-	for(int i = 0; i < 10000; i++)
+	for(int i = 0; i < 10000; i++) {
+		m1();
+		m2();
+		m3();
+	}
 }
 }
