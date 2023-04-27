@@ -1,11 +1,13 @@
 package telran.multithreading.consumers;
 
+import java.util.concurrent.BlockingQueue;
+
 import telran.multithreading.MessageBox;
 
 public class Receiver extends Thread {
- private MessageBox messageBox;
+ private BlockingQueue<String> messageBox;
 
-public Receiver(MessageBox mesageBox) {
+public Receiver(BlockingQueue<String> mesageBox) {
 	this.messageBox = mesageBox;
 	setDaemon(true);
 }
